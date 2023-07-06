@@ -1,0 +1,7 @@
+<mat-form-field>
+    <mat-label>See a day off earth</mat-label>
+    <input matInput [matDatepicker]="picker" (dateChange)="app.callCloudFunctionForNasaWithDate($event)">
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
